@@ -1,0 +1,6 @@
+name: TestPlugin
+main: io.github.skepter.name.Main
+version: 1.0
+description: Performs tests
+author: Skepter
+website: http://skepter.github.io/
