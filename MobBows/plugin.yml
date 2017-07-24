@@ -1,6 +1,116 @@
-name: TestPlugin
-main: io.github.skepter.name.Main
-version: 1.0
-description: Performs tests
+name: MobBows
+main: io.github.skepter.mobbows
+version: 3.0
 author: Skepter
-website: http://skepter.github.io/
+description: Fire Mobs from Bows!
+
+commands:
+  mb:
+    description: Gives the designated player a mob bow
+    aliases: [mobbows, mobbow, givebow]
+    usage: Use /mb
+
+permissions:
+   MobBows.use.*:
+     description: Gives access to all Bows
+     children:
+       MobBows.zombie: true
+       MobBows.skeleton: true
+       MobBows.creeper: true
+       MobBows.spider: true
+       MobBows.blaze: true
+       MobBows.ghast: true
+       MobBows.slime: true
+       MobBows.magmacube: true
+       MobBows.witherskeleton: true
+       MobBows.silverfish: true
+       MobBows.witch: true
+       MobBows.zombiepigman: true 
+       MobBows.enderman: true  
+       MobBows.poweredcreeper: true
+       MobBows.ocelot: true
+       MobBows.wolf: true
+       MobBows.pig: true
+       MobBows.cow: true
+       MobBows.villager: true
+       MobBows.squid: true
+       MobBows.chicken: true
+       MobBows.horse: true
+       MobBows.sheep: true
+       MobBows.mooshroom: true
+       MobBows.give: true 
+   MobBows.zombie:
+     description: Fire Zombies
+     default: false
+   MobBows.skeleton:
+     description: Fire Skeletons
+     default: false
+   MobBows.creeper:
+     description: Fire Creepers
+     default: false
+   MobBows.spider:
+     description: Fire Spiders
+     default: false
+   MobBows.blaze:
+     description: Fire Blazes
+     default: false
+   MobBows.ghast:
+     description: Fire Ghasts
+     default: false
+   MobBows.slime:
+     description: Fire Slimes
+     default: false
+   MobBows.magmacube:
+     description: Fire Magma Cubes
+     default: false
+   MobBows.witherskeleton:
+     description: Fire Wither Skeletons
+     default: false
+   MobBows.silverfish:
+     description: Fire Silverfish
+     default: false
+   MobBows.witch:
+     description: Fire Witches
+     default: false
+   MobBows.zombiepigman:
+     description: Fire Zombie Pigmen
+     default: false
+   MobBows.enderman:
+     description: Fire Endermen
+     default: false
+   MobBows.poweredcreeper:
+     description: Fire Powered Creepers
+     default: false
+   MobBows.ocelot:
+     description: Fire Ocelots
+     default: false
+   MobBows.wolf:
+     description: Fire Wolves
+     default: false
+   MobBows.pig:
+     description: Fire Pigs
+     default: false
+   MobBows.cow:
+     description: Fire Cows
+     default: false
+   MobBows.mooshroom:
+     description: Fire Mooshrooms
+     default: false
+   MobBows.chicken:
+     description: Fire Chickens
+     default: false
+   MobBows.horse:
+     description: Fire Horses
+     default: false
+   MobBows.villager:
+     description: Fire Villagers
+     default: false
+   MobBows.sheep:
+     description: Fire Sheep
+     default: false
+   MobBows.squid:
+     description: Fire Squid
+     default: false
+   MobBows.give:
+     description: Use /mb command
+     default: false
